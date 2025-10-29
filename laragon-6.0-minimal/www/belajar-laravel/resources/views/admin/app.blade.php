@@ -1,11 +1,11 @@
 {{-- resources/views/admin/app.blade.php --}}
-@include('layouts.admin.css')
-@include('layouts.admin.header')
-@include('layouts.admin.sidebar')
+@include('admin.layouts.css')
+@include('admin.layouts.header')
+@include('admin.layouts.sidebar')
 
 <main class="content">
     @yield('content')
 </main>
 
-@include('layouts.admin.footer')
-@include('layouts.admin.js')
+@include('admin.layouts.footer')
+@include('admin.layouts.js')
