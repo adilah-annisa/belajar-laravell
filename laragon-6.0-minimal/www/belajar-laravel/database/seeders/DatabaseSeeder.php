@@ -20,4 +20,9 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@example.com',
         ]);
     }
+
+    public function index() {
+        $data['dataPelanggan'] = Pelanggan::all();
+        return view('admin.pelanggan.index',$data);
+    }
 }
